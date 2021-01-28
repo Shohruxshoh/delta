@@ -1,0 +1,17 @@
+{% extends 'new/base.html' %}
+{% block content %}
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <h1 class="title is-1">{{post.title}}</h1>
+                <img src="{{post.image.url}}" alt="">
+                <h4 class="subtitle is-4">{{post.text}}</h4>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

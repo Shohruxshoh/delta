@@ -1,0 +1,17 @@
+{% extends 'new/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for item in search_obj %}
+        <div class="card" style="width: 20rem;">
+            <img src="{{item.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.text}}</p>
+                <p>{{item.date}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

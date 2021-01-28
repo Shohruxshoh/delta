@@ -1,0 +1,27 @@
+{% extends 'new/base.html' %}
+{% load static %}
+{% block content %}
+<h1>salom</h1>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {% for item in fayls %}
+      <a href="{{item.get_absolute_url}}">
+        <div class="card" style="width: 20rem;">
+          <img src="{{item.image.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.text}}</p>
+            <p>{{item.date}}</p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+
+</section>
+
+
+{% endblock %}
