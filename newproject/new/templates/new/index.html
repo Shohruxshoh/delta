@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       {% for item in fayls %}
-      <a href="{{item.get_absolute_url}}">
+      <a href="{{item.get_absolute_url}}" class="card" style="width: 23rem; text-decoration: none;">
         <div class="card" style="width: 20rem;">
           <img src="{{item.image.url}}" class="card-img-top" alt="...">
           <div class="card-body">
